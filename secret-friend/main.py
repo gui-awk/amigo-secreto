@@ -9,8 +9,10 @@ def verificar(participantes, sorteio):
     return True
 
 #lista vazia de participantes e o input do total de participantes
-quantidade_participantes = int(input("Quantos participantes possuem o grupo? "))
-participantes = []
+def qtd_participantes():
+    quantidade_participantes = int(input("Quantos participantes possuem o grupo? "))
+    participantes = []
+    return len(quantidade_participantes)
 
 #adicionar participantes (e seus nomes) à lista vazia de acordo com o numero total de participantes
 for i in range(quantidade_participantes):
@@ -20,9 +22,10 @@ for i in range(quantidade_participantes):
     
 
 #sorteio randomico a usando a função de verificação do sorteio dentro de um while
-sorteio = random.sample(participantes, len(participantes))
-while not verificar(participantes, sorteio):
+def sortear():
     sorteio = random.sample(participantes, len(participantes))
+        while not verificar(participantes, sorteio):
+            sorteio = random.sample(participantes, len(participantes))
 
 
 
