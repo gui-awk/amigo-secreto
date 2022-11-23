@@ -50,7 +50,7 @@ while window_open:
         window_open = False
         window_participantes.close()
         print(qtd_participantes)
-        event_1, values_1 = window_nomes.read()
+        window_nomes.read()
         
 
 
