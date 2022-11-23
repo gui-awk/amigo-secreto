@@ -27,10 +27,9 @@ while not verificar(participantes, sorteio):
 
 
 #criação de arquivos txt com nome do participante, e o conteúdo é quem ele sorteou
-for i in range(len(participantes)):
-
+for i in range(len(participantes)):   
     arquivo = open("{}.txt".format(participantes[i]), "w", encoding="utf-8")
-    arquivo.write("Bem vindo ao sorteio do amigo secreto!  O seu amigo secreto  é: {} ".format(sorteio[i]))
+    arquivo.write("Bem vindo ao sorteio do amigo secreto! O seu amigo secreto  é: {} ".format(sorteio[i]))
     arquivo.write("\nO presente que o seu amigo secreto escolheu é: {}".format(presente))
     arquivo.close()
 
