@@ -24,7 +24,7 @@ for i in range(quantidade_participantes):
 #sorteio randomico a usando a função de verificação do sorteio dentro de um while
 def sortear():
     sorteio = random.sample(participantes, len(participantes))
-        while not verificar(participantes, sorteio):
+    while not verificar(participantes, sorteio):
             sorteio = random.sample(participantes, len(participantes))
 
 
